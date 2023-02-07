@@ -119,6 +119,12 @@ body.light-theme .buttons .button:hover {
   font-weight: 350;
 }
 
+.animation {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
 @media(max-width: 550px) {
   .example {
     width: 100%;

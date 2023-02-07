@@ -14,6 +14,12 @@ let statusPage = "";
 document.addEventListener('DOMContentLoaded', () => {
   toggleTheme()
 
+  display()
+
+  loadStarted()
+});
+
+function display(){
   calcDates()
 
   if (countdownDate == 0) {
@@ -21,16 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  if (statusPage == "countdown") {
-    console.log("countdown")
-    loadCountdown()
+  // if (statusPage == "countdown") {
+  //   console.log("countdown")
+  //   loadCountdown()
 
-  } else if (statusPage == "started") {
-    console.log("started")
-    loadStarted()
-  }
-
-});
+  // } else if (statusPage == "started") {
+  //   console.log("started")
+  //   loadStarted()
+  // }
+}
 
 function calcDates() {
   for (const date of dates) {
@@ -77,9 +82,10 @@ function loadCountdown() {
     .start()
     .ifEnded(() => {
       console.log('The countdown has ended!');
-      calcDates()
+      display()
     });
 
+  document.getElementById("animation").style.display = "none";
   document.getElementById("status").innerHTML = "Not Started Yet";
   document.getElementById("status").style.color = "rgb(97, 0, 0)";
 }
@@ -91,9 +97,10 @@ function loadStarted() {
     .start()
     .ifEnded(() => {
       console.log('The countdown has ended!');
-      calcDates()
+      display()
     });
 
+  document.getElementById("animation").style.display = "block";
   document.getElementById("status").innerHTML = "Started";
   document.getElementById("status").style.color = "rgb(0, 97, 0)";
 
