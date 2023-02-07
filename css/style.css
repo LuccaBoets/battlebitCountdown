@@ -62,9 +62,10 @@ body.light-theme .buttons .button:hover {
 
 .example p {
   text-align: center;
-  font-weight: 100;
+  font-size: 1.5em;
+  font-weight: 300;
   margin-top: 0;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 }
 
 .example .buttons {

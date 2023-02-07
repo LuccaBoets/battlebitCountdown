@@ -76,12 +76,15 @@ function toggleTheme() {
 }
 
 function loadCountdown() {
-  console.log("countdownDate: ", countdownDate)
+  console.log("loadCountdown")
 
+  // countdownDate = Date.parse(new Date()) / 1000 + 5;
+  console.log("countdownDate: ", countdownDate)
   var flipdown = new FlipDown(countdownDate)
     .start()
     .ifEnded(() => {
       console.log('The countdown has ended!');
+      document.getElementById("flipdown").innerHTML = "";
       display()
     });
 
@@ -91,12 +94,14 @@ function loadCountdown() {
 }
 
 function loadStarted() {
+  console.log("loadStarted")
   console.log("countdownDate: ", countdownDate)
 
   var flipdown = new FlipDown(countdownDate)
     .start()
     .ifEnded(() => {
       console.log('The countdown has ended!');
+      document.getElementById("flipdown").innerHTML = "";
       display()
     });
 
