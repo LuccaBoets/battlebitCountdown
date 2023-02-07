@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   display()
 
-  loadStarted()
+  // loadStarted()
 });
 
 function display(){
@@ -27,14 +27,14 @@ function display(){
     return;
   }
 
-  // if (statusPage == "countdown") {
-  //   console.log("countdown")
-  //   loadCountdown()
+  if (statusPage == "countdown") {
+    console.log("countdown")
+    loadCountdown()
 
-  // } else if (statusPage == "started") {
-  //   console.log("started")
-  //   loadStarted()
-  // }
+  } else if (statusPage == "started") {
+    console.log("started")
+    loadStarted()
+  }
 }
 
 function calcDates() {
