@@ -114,6 +114,11 @@ body.light-theme .buttons .button:hover {
   color: rgb(97, 0, 0)
 }
 
+.rotor-group-heading::before {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 350;
+}
+
 @media(max-width: 550px) {
   .example {
     width: 100%;

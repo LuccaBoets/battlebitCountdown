@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (statusPage == "countdown") {
     console.log("countdown")
-    loadCountDown()
+    loadCountdown()
 
   } else if (statusPage == "started") {
     console.log("started")
@@ -70,7 +70,7 @@ function toggleTheme() {
   body.querySelector('#flipdown').classList.toggle('flipdown__theme-light');
 }
 
-function loadCountDown() {
+function loadCountdown() {
   console.log("countdownDate: ", countdownDate)
 
   var flipdown = new FlipDown(countdownDate)
