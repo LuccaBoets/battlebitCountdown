@@ -112,7 +112,8 @@ body.light-theme .buttons .button:hover {
 
 #status {
   font-family: 'Oswald', sans-serif;
-  color: rgb(97, 0, 0)
+  color: rgb(97, 0, 0);
+  font-size: 3.5em;
 }
 
 .rotor-group-heading::before {
