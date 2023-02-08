@@ -89,7 +89,7 @@ function loadCountdown() {
     });
 
   document.getElementById("animation").style.display = "none";
-  document.getElementById("status").innerHTML = "Not Started Yet";
+  document.getElementById("status").innerHTML = "Hasn't Not Started Yet";
   document.getElementById("status").style.color = "rgb(97, 0, 0)";
 }
 
@@ -106,7 +106,7 @@ function loadStarted() {
     });
 
   document.getElementById("animation").style.display = "block";
-  document.getElementById("status").innerHTML = "Started";
+  document.getElementById("status").innerHTML = "Started, Go play now!";
   document.getElementById("status").style.color = "rgb(0, 97, 0)";
 
 
