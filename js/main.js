@@ -106,7 +106,7 @@ function loadStarted() {
     });
 
   document.getElementById("animation").style.display = "block";
-  document.getElementById("status").innerHTML = "Started, Go play now!";
+  document.getElementById("status").innerHTML = "Playtest started, go play now!";
   document.getElementById("status").style.color = "rgb(0, 97, 0)";
 
 
