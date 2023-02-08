@@ -89,7 +89,7 @@ function loadCountdown() {
     });
 
   document.getElementById("animation").style.display = "none";
-  document.getElementById("status").innerHTML = "Hasn't Not Started Yet";
+  document.getElementById("status").innerHTML = "Hasn't started yet";
   document.getElementById("status").style.color = "rgb(97, 0, 0)";
 }
 
