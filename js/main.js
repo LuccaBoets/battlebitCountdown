@@ -14,7 +14,7 @@ let statusPage = "";
 
 document.addEventListener('DOMContentLoaded', async () => {
   //fetching the dates data
-  dates = await fetch("./data/dates.json").then((req)=>{return req.json()})
+  dates = await (await fetch("./data/dates.json")).json()
   //sort list on oldest to newst, just to be sure
   dates.sort((a,b) =>{
     return a - b
