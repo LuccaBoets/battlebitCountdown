@@ -14,37 +14,11 @@ let statusPage = "";
 
 document.addEventListener('DOMContentLoaded', async () => {
   //fetching the dates data
-  //dates = await fetch("./data/dates.json").json()
   dates = await fetch("./data/dates.json").then((req)=>{return req.json()})
-  /*  
-  dates = [
-      {
-          "unixTimestamp":1675823400000,
-          "dateText":"8 February 2023 2:30 am GMT",
-          "playtestDuration":10800000,
-          "playtestDurationText":"3 hours"
-      }, 
-      {
-          "unixTimestamp":1675884600000,
-          "dateText":"8 February 2023 7:30 pm GMT",
-          "playtestDuration":10800000,
-          "playtestDurationText":"3 hours"
-      }, 
-      {
-          "unixTimestamp":1676122200000,
-          "dateText":"11 February 2023 1:30 pm GMT",
-          "playtestDuration":18000000,
-          "playtestDurationText":"6 hours"
-      }
-  ]
-  */
-  console.log(dates)
-
   //sort list on oldest to newst, just to be sure
   dates.sort((a,b) =>{
     return a - b
   })
-  console.log(dates)
 
   toggleTheme()
 
