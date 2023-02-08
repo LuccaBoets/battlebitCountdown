@@ -1,13 +1,3 @@
-// let dates = [ { "date": Date.parse("8 February 2023 2:30am"), "length": 3}, 
-//           { "date": Date.parse("11 February 2023 14:30"), "length": 6} ]
-
-/*
-let dates = [
-  { "date": Date.parse("8 February 2023 2:30 am GMT"), "length": 3 },
-  { "date": Date.parse("8 February 2023 7:30 pm GMT"), "length": 3 },
-  { "date": Date.parse("11 February 2023 1:30 pm GMT"), "length": 6 }
-]
-*/
 let dates = []
 let countdownDate = 0;
 let statusPage = "";
@@ -116,6 +106,4 @@ function loadStarted() {
   document.getElementById("animation").style.display = "block";
   document.getElementById("status").innerHTML = "Playtest started, go play now!";
   document.getElementById("status").style.color = "rgb(0, 97, 0)";
-
-
 }
