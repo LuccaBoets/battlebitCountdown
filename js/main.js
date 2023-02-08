@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   dates = await (await fetch("./data/dates.json")).json()
   //sort list on oldest to newst, just to be sure
   dates.sort((a,b) =>{
-    return a - b
+    return a.playtestDuration - b.playtestDuration
   })
 
   toggleTheme()
