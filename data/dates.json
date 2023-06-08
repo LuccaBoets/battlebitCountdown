@@ -1,20 +1,8 @@
 [
     {
-        "unixTimestamp":1676341800000,
-        "dateText":"14 February 2023 2:30 am GMT",
-        "playtestDuration":10800000,
-        "playtestDurationText":"3 hours"
-    }, 
-    {
-        "unixTimestamp":1676395800000,
-        "dateText":"14 February 2023 5:30 pm GMT",
-        "playtestDuration":10800000,
-        "playtestDurationText":"3 hours"
-    }, 
-    {
-        "unixTimestamp":1676727000000,
-        "dateText":"18 February 2023 1:30 pm GMT",
-        "playtestDuration":21600000,
-        "playtestDurationText":"6 hours"
+        "unixTimestamp":1686506400,
+        "dateText":"11 June 2023 6:00 PM GMT",
+        "playtestDuration":172800000,
+        "playtestDurationText":"48 hours"
     }
 ]
